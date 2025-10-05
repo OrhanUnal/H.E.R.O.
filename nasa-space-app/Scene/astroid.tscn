@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://tmlldnlyfpix"]
+
+[ext_resource type="Script" uid="uid://cs2iqge1ac0rc" path="res://Script/astroid.gd" id="1_18ymr"]
+[ext_resource type="Texture2D" uid="uid://cxqullig4a0qb" path="res://Asteroid Brown.png" id="2_gmtcg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gmtcg"]
+
+[node name="Astroid" type="RigidBody2D" groups=["Meteor"]]
+collision_layer = 0
+mass = 0.001
+script = ExtResource("1_18ymr")
+
+[node name="CollisionShape3D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_gmtcg")
+
+[node name="Sprite3D" type="Sprite2D" parent="."]
+scale = Vector2(0.62931037, 0.6315789)
+texture = ExtResource("2_gmtcg")

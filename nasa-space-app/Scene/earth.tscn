@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5cccxmup3r0k"]
+
+[ext_resource type="Script" uid="uid://bn8rv5t36doo3" path="res://Script/earth.gd" id="1_osp37"]
+[ext_resource type="Texture2D" uid="uid://v705d1rv0ugc" path="res://our-blue-planet-stunning-view-earth-from-space.png" id="2_4r11s"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cw5ul"]
+
+[node name="Earth" type="RigidBody2D" groups=["Meteor"]]
+script = ExtResource("1_osp37")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_cw5ul")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.08208623, 0.07910901)
+texture = ExtResource("2_4r11s")

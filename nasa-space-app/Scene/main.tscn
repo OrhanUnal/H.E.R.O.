@@ -1,0 +1,342 @@
+[gd_scene load_steps=8 format=3 uid="uid://ck66oqspltnaq"]
+
+[ext_resource type="Script" uid="uid://cv8h7dok6segu" path="res://Script/main.gd" id="1_f6udf"]
+[ext_resource type="Texture2D" uid="uid://4d7og6kxaywa" path="res://dZGhOY.png" id="2_r34rm"]
+[ext_resource type="Texture2D" uid="uid://cwxwi20c3cjje" path="res://images (2).jpeg" id="2_sblpm"]
+[ext_resource type="Texture2D" uid="uid://buo5ghhu4bmuu" path="res://blue.png" id="4_ow1sv"]
+[ext_resource type="Texture2D" uid="uid://cto5aywsdmrb3" path="res://green.png" id="5_75buv"]
+[ext_resource type="Texture2D" uid="uid://cgoxeohfcmk8e" path="res://red.png" id="6_c2iwn"]
+[ext_resource type="Texture2D" uid="uid://0hsdymo571j8" path="res://yellow.png" id="7_3pt4j"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_f6udf")
+metadata/_edit_horizontal_guides_ = [-935.0]
+
+[node name="OrbitValuesHTTP" type="HTTPRequest" parent="."]
+
+[node name="DZGhOy" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(0.5708062, 0.58080846)
+texture = ExtResource("2_r34rm")
+
+[node name="DarkBlueGradientBackground" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(61.000004, 11.000001)
+scale = Vector2(70.731804, 54.44584)
+texture = ExtResource("2_sblpm")
+
+[node name="Camera3D" type="Camera2D" parent="."]
+zoom = Vector2(0.33, 0.33)
+
+[node name="Button" type="Button" parent="."]
+offset_left = -1558.0
+offset_top = -887.0
+offset_right = -708.0
+offset_bottom = -537.0
+theme_override_font_sizes/font_size = 150
+text = "McNaught
+"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = -482.0
+offset_top = -865.0
+offset_right = 380.0
+offset_bottom = -514.0
+theme_override_font_sizes/font_size = 90
+text = "Catalina-McNaught"
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 699.0
+offset_top = -865.0
+offset_right = 1355.0
+offset_bottom = -501.0
+theme_override_font_sizes/font_size = 152
+text = "Halley
+"
+
+[node name="Button4" type="Button" parent="."]
+offset_left = -1496.0
+offset_top = -248.0
+offset_right = -838.0
+offset_bottom = 131.0
+theme_override_font_sizes/font_size = 171
+text = "Encke
+"
+
+[node name="Button5" type="Button" parent="."]
+offset_left = -354.0
+offset_top = -220.0
+offset_right = 255.0
+offset_bottom = 115.0
+theme_override_font_sizes/font_size = 186
+text = "Biela
+"
+
+[node name="Button6" type="Button" parent="."]
+offset_left = 699.0
+offset_top = -220.0
+offset_right = 1371.0
+offset_bottom = 102.0
+theme_override_font_sizes/font_size = 155
+text = "Brorsen
+"
+
+[node name="Button7" type="Button" parent="."]
+offset_left = -1496.0
+offset_top = 509.0
+offset_right = -798.0
+offset_bottom = 848.0
+theme_override_font_sizes/font_size = 86
+text = "Pons-Winnecke
+"
+
+[node name="Button8" type="Button" parent="."]
+offset_left = -354.0
+offset_top = 509.0
+offset_right = 226.0
+offset_bottom = 839.0
+theme_override_font_sizes/font_size = 151
+text = "Tuttle
+"
+
+[node name="Button9" type="Button" parent="."]
+offset_left = 699.0
+offset_top = 527.0
+offset_right = 1432.0
+offset_bottom = 861.0
+theme_override_font_sizes/font_size = 120
+text = "Pons-Brooks
+"
+
+[node name="Button10" type="Button" parent="."]
+offset_left = -212.0
+offset_top = 207.0
+offset_right = 175.0
+offset_bottom = 415.0
+theme_override_font_sizes/font_size = 80
+text = "ALL IN
+"
+
+[node name="UI" type="Control" parent="."]
+visible = false
+z_index = 1
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SpeedSlider" type="HSlider" parent="UI"]
+layout_mode = 0
+offset_left = -847.0
+offset_top = 813.0
+offset_right = 824.0
+offset_bottom = 905.0
+max_value = 60.0
+value = 1.0
+
+[node name="Label" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = -1743.0
+offset_top = -979.0
+offset_right = -1703.0
+offset_bottom = -891.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+
+[node name="EarthOrb" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = -1557.0
+offset_top = -33.0
+offset_right = -1167.0
+offset_bottom = 146.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Earth Orbit
+"
+
+[node name="EarthOrb2" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = -1557.0
+offset_top = 102.0
+offset_right = -1167.0
+offset_bottom = 281.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Meteor Orbit
+Before Kinetic Impact
+"
+
+[node name="EarthOrb3" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = -1557.0
+offset_top = 248.0
+offset_right = -375.0
+offset_bottom = 427.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Meteor Orbit 
+After Kinetic Impact
+"
+
+[node name="MoonOrb" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = -1557.0
+offset_top = -161.0
+offset_right = -1167.0
+offset_bottom = 18.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Lunar Orbit
+"
+
+[node name="Label2" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = -1737.0
+offset_top = -622.0
+offset_right = -1028.0
+offset_bottom = -404.99994
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+
+[node name="HERA" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = -1054.0
+offset_top = -984.0
+offset_right = -345.0
+offset_bottom = -766.99994
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.35887605, 0.13481188, 0.6316749, 0)
+theme_override_font_sizes/font_size = 65
+text = "H.E.R.O."
+
+[node name="Impact" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = -1735.0
+offset_top = 597.0
+offset_right = -1333.1602
+offset_bottom = 832.0
+theme_override_font_sizes/font_size = 66
+text = "Kinetic 
+Impactor"
+
+[node name="ImpactForce" type="HSlider" parent="UI"]
+layout_mode = 0
+offset_left = -1674.0
+offset_top = 855.0
+offset_right = -1398.0
+offset_bottom = 871.0
+max_value = 1.0
+step = 0.005
+value = 0.05
+
+[node name="LinkButton" type="LinkButton" parent="UI"]
+layout_mode = 0
+offset_left = -1744.0
+offset_top = -405.0
+offset_right = -1309.0
+offset_bottom = -313.0
+theme_override_colors/font_color = Color(0.14204204, 0, 0.75001466, 1)
+theme_override_font_sizes/font_size = 40
+text = "Link to the nasa page"
+
+[node name="Name" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = -1744.0
+offset_top = -508.0
+offset_right = -1536.4426
+offset_bottom = -435.20325
+scale = Vector2(3.3870168, 2.2940583)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 16
+
+[node name="SpeedLabel" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = -162.0
+offset_top = 876.0
+offset_right = 394.0
+offset_bottom = 964.00006
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+
+[node name="ImpactLabel" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = -1634.0001
+offset_top = 915.0
+offset_right = -1594.0001
+offset_bottom = 938.0
+scale = Vector2(4.1509557, 2.6399026)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="ZoomLabel" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = -233.0
+offset_top = 774.0
+offset_right = 231.0
+offset_bottom = 797.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+
+[node name="moonDistance" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = -1745.0
+offset_top = -858.0
+offset_right = -1555.9043
+offset_bottom = -787.04846
+scale = Vector2(3.76, 2.2268734)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="earthDistance" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = -1742.0
+offset_top = -743.0
+offset_right = -1553.702
+offset_bottom = -663.96545
+scale = Vector2(3.76, 2.2268734)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 16
+
+[node name="Blue" type="Sprite2D" parent="UI"]
+position = Vector2(-1629.0001, -105.00001)
+scale = Vector2(0.7344781, 0.7475167)
+texture = ExtResource("4_ow1sv")
+
+[node name="Green" type="Sprite2D" parent="UI"]
+position = Vector2(-1628.8517, 26.640627)
+scale = Vector2(0.5448927, 0.4400059)
+texture = ExtResource("5_75buv")
+
+[node name="Red" type="Sprite2D" parent="UI"]
+position = Vector2(-1625.9999, 164.00002)
+scale = Vector2(0.53398055, 0.53571427)
+texture = ExtResource("6_c2iwn")
+
+[node name="Yellow" type="Sprite2D" parent="UI"]
+position = Vector2(-1624.25, 287.5)
+scale = Vector2(0.57567596, 0.56069356)
+texture = ExtResource("7_3pt4j")
+
+[node name="BackButton" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = 1467.0
+offset_top = -946.0
+offset_right = 1707.0
+offset_bottom = -721.0
+theme_override_font_sizes/font_size = 80
+text = "Home
+"
+
+[connection signal="request_completed" from="OrbitValuesHTTP" to="." method="_on_orbit_values_http_request_completed"]
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_down" from="Button2" to="." method="_on_button_2_button_down"]
+[connection signal="button_down" from="Button3" to="." method="_on_button_3_button_down"]
+[connection signal="button_down" from="Button4" to="." method="_on_button_4_button_down"]
+[connection signal="button_down" from="Button5" to="." method="_on_button_5_button_down"]
+[connection signal="button_down" from="Button6" to="." method="_on_button_6_button_down"]
+[connection signal="button_down" from="Button7" to="." method="_on_button_7_button_down"]
+[connection signal="button_down" from="Button8" to="." method="_on_button_8_button_down"]
+[connection signal="button_down" from="Button9" to="." method="_on_button_9_button_down"]
+[connection signal="button_down" from="Button10" to="." method="_on_button_10_button_down"]
+[connection signal="value_changed" from="UI/SpeedSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="button_down" from="UI/Impact" to="." method="_on_impact_button_down"]
+[connection signal="value_changed" from="UI/ImpactForce" to="." method="_on_impact_force_value_changed"]
+[connection signal="button_down" from="UI/BackButton" to="." method="_on_back_button_button_down"]

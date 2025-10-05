@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cshwfkgx0wbrt"]
+
+[ext_resource type="Texture2D" uid="uid://cwxwi20c3cjje" path="res://images (2).jpeg" id="1_r5ywd"]
+
+[node name="OrbitSprite" type="Node2D" groups=["Meteor"]]
+z_index = -1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.038868852, 0.09071185)
+texture = ExtResource("1_r5ywd")

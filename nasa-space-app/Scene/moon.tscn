@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfhrkp5cu4ntq"]
+
+[ext_resource type="Script" uid="uid://b1bb7innphnr8" path="res://Script/moon.gd" id="1_7yrmh"]
+[ext_resource type="Texture2D" uid="uid://d2fcg44alabys" path="res://NVbt2j.png" id="2_bvru2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hlbmx"]
+
+[node name="Moon" type="RigidBody2D" groups=["Meteor"]]
+script = ExtResource("1_7yrmh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_hlbmx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.17874375, 0.20523375)
+texture = ExtResource("2_bvru2")
